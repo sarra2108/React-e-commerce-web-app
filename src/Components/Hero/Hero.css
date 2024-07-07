@@ -1,0 +1,15 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 0; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.hero img {
+    width: 100%;
+    height: auto; 
+    max-height: 90vh;
+    object-fit: cover; 
+}

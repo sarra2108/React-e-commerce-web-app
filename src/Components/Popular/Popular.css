@@ -1,0 +1,44 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 1280px;
+    margin: auto;
+    padding: 20px; 
+}
+
+.popular h1 {
+    color: #171717;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: -10px;
+}
+
+.popular hr {
+    width: 150px;
+    height: 4px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.popular-item {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+    margin: 20px 0; /* Margin around the item */
+}
+
+.popular-item img {
+    width: 45%; /* Adjust the size as needed */
+    height: auto;
+}
+
+.popular-item p {
+    text-align:left;
+    padding-left: 30px;
+    font-size: 20px;
+    line-height: 1.6; 
+    max-width: 600px; /* Limit the width of the text */
+}
+
