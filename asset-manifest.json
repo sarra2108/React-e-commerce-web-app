@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/React-e-commerce-web-app/static/css/main.05939d43.css",
+    "main.js": "/React-e-commerce-web-app/static/js/main.ab7b979f.js",
+    "static/media/Picture9.png": "/React-e-commerce-web-app/static/media/Picture9.70ec6b3e0cd1da4e242c.png",
+    "static/media/Picture11.png": "/React-e-commerce-web-app/static/media/Picture11.06e97a520dbb857c0c8d.png",
+    "static/media/Picture14.png": "/React-e-commerce-web-app/static/media/Picture14.ea8cce1dbb9a53f0d68a.png",
+    "static/media/Picture1.jpg": "/React-e-commerce-web-app/static/media/Picture1.0ac790d4354a46783370.jpg",
+    "static/media/Picture2.jpg": "/React-e-commerce-web-app/static/media/Picture2.7a32ae1a0e13380b8fd9.jpg",
+    "static/media/Picture3.png": "/React-e-commerce-web-app/static/media/Picture3.c78772bce4c403c84266.png",
+    "static/media/Picture6.png": "/React-e-commerce-web-app/static/media/Picture6.8712490cb2179d2a4c65.png",
+    "static/media/Picture12.png": "/React-e-commerce-web-app/static/media/Picture12.7334d6601528d0e7f8b1.png",
+    "static/media/Picture13.png": "/React-e-commerce-web-app/static/media/Picture13.8ef2842fa7a75b5f4cc2.png",
+    "static/media/picture7.png": "/React-e-commerce-web-app/static/media/picture7.658ec11004de164107d3.png",
+    "static/media/Picture10.png": "/React-e-commerce-web-app/static/media/Picture10.96a34a3ca98a69480cb6.png",
+    "static/media/Picture4.png": "/React-e-commerce-web-app/static/media/Picture4.89fe53343fdac6e31a5a.png",
+    "static/media/Picture8.png": "/React-e-commerce-web-app/static/media/Picture8.621454799d8956315134.png",
+    "static/media/Picture5.png": "/React-e-commerce-web-app/static/media/Picture5.fceae526e7495cd48f35.png",
+    "index.html": "/React-e-commerce-web-app/index.html",
+    "main.05939d43.css.map": "/React-e-commerce-web-app/static/css/main.05939d43.css.map",
+    "main.ab7b979f.js.map": "/React-e-commerce-web-app/static/js/main.ab7b979f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05939d43.css",
+    "static/js/main.ab7b979f.js"
+  ]
+}
