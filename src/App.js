@@ -9,11 +9,11 @@ import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
 import Footer from './Components/Footer/Footer';
 
-
+import FAQ from './Pages/FAQ';
 import Contact from'./Pages/Contact';
 import Contactus from'./Pages/Contact_us';
 
-
+ 
 
 function App() {
   return (
@@ -23,8 +23,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Shop/>}/>
         <Route path='/products' element={<ShopCategory  category="products"/>}/>
-        
-        
+        <Route path='/FAQ' element={<FAQ/>}/>
         <Route path="/product" element={<Product/>}>
           <Route path=':productId' element={<Product/>}/>
         </Route>

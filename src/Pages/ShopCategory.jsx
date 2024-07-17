@@ -59,7 +59,7 @@ const ShopCategory = (props) => {
       filteredProducts = filteredProducts.filter(product => product.group === 'Vases' || product.group === 'Bowls');
     }
 
-    return filteredProducts;
+    return filteredProducts; 
   };
 
   return (

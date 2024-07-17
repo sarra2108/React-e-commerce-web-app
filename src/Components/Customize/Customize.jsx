@@ -1,12 +1,13 @@
-// src/pages/Customize.js
 import React, { useContext, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { ShopContext } from '../../Context/ShopContext';
-import './Customize.css'; // Import the CSS file for styling
+import './Customize.css';
 
 const Customize = () => {
+  const { t } = useTranslation();
   const { all_product } = useContext(ShopContext);
-  const { productId } = useParams(); // Get the product ID from the URL
+  const { productId } = useParams();
   const product = all_product.find(product => product.id === parseInt(productId));
 
   const [formData, setFormData] = useState({
@@ -26,56 +27,57 @@ const Customize = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log('Form submitted:', formData);
   };
 
   if (!product) {
-    return <p>No product found or customization not available for this product</p>;
+    return <p>{t('no_product_found')}</p>;
   }
 
   return (
-    <div className="customize-container">
+    <div className="customize-container" role="form" aria-labelledby="customize-title">
       <div className="product-display">
-        <h1>You can also customize the product </h1>
+        <h1 id="customize-title">{t('customize_title')}</h1>
         <hr className="short-hr" />
       </div>
       <form className="customize-form" onSubmit={handleSubmit}>
         {(product.id === 1 || product.id === 2 || product.id === 3) && (
           <>
             <label className="input">
-              
-              Choose color of the vase:
+              {t('choose_color_vase')}
               <input 
                 type="text"
                 name="color"
                 value={formData.color}
                 onChange={handleChange}
-                placeholder="Exp: White"
+                placeholder={t('placeholder_white')}
+                aria-label={t('choose_color_vase')}
               />
             </label>
             <label className="input">
-              Choose color of pattern:
+              {t('choose_color_pattern')}
               <input
                 type="text"
                 name="color2"
                 value={formData.color2}
                 onChange={handleChange}
-                placeholder="Exp: Blue"
+                placeholder={t('placeholder_blue')}
+                aria-label={t('choose_color_pattern')}
               />
             </label>
             <label className="input">
-              Add a personalized message:
+              {t('add_personalized_message')}
               <input
                 type="text"
-                name="color2"
-                value={formData.color2}
+                name="personalizedMessage"
+                value={formData.personalizedMessage}
                 onChange={handleChange}
-                placeholder="Exp: Happy Birthday"
+                placeholder={t('placeholder_happy_birthday')}
+                aria-label={t('add_personalized_message')}
               />
             </label>
-            <div className="fieldset">
-              <label>Choose Shape:</label>
+            <fieldset className="fieldset">
+              <legend>{t('choose_shape')}</legend>
               <div className="radio-group">
                 {product.shapes.map((shape, index) => (
                   <label key={index}>
@@ -84,18 +86,19 @@ const Customize = () => {
                       name="shape"
                       value={shape}
                       onChange={handleChange}
+                      aria-label={t(`shape_${shape.toLowerCase().replace(/ /g, '_')}`)}
                     />
-                    {shape}
+                    {t(`shape_${shape.toLowerCase().replace(/ /g, '_')}`)}
                   </label>
                 ))}
               </div>
-            </div>
+            </fieldset>
           </>
         )}
 
         {(product.id === 4 || product.id === 5) && (
-          <div className="fieldset">
-            <label>Choose Dimension:</label>
+          <fieldset className="fieldset">
+            <legend>{t('choose_dimension')}</legend>
             <div className="radio-group">
               {product.dimension.map((dimension, index) => (
                 <label key={index}>
@@ -104,34 +107,37 @@ const Customize = () => {
                     name="dimension"
                     value={dimension}
                     onChange={handleChange}
+                    aria-label={t(`dimension_${dimension.toLowerCase().replace(/ /g, '_').replace(/:/g, '').replace(/cm/g, 'cm').replace(/m/g, 'm')}`)}
                   />
-                  {dimension}
+                  {t(`dimension_${dimension.toLowerCase().replace(/ /g, '_').replace(/:/g, '').replace(/cm/g, 'cm').replace(/m/g, 'm')}`)}
                 </label>
               ))}
             </div>
-          </div>
+          </fieldset>
         )}
 
         {product.id === 6 && (
           <>
             <label className="input">
-              Choose color of the bowl:
+              {t('choose_color_bowl')}
               <input
                 type="text"
                 name="color"
                 value={formData.color}
                 onChange={handleChange}
-                placeholder="Exp: White"
+                placeholder={t('placeholder_white')}
+                aria-label={t('choose_color_bowl')}
               />
             </label>
-            <label className="input"> 
-              Choose color of pattern (up to 4 colors, separated by commas):
+            <label className="input">
+              {t('choose_color_pattern_4')}
               <input
                 type="text"
                 name="color2"
                 value={formData.color2}
                 onChange={handleChange}
-                placeholder="Exp: Blue, Red, Green, Light Blue"
+                placeholder={t('placeholder_colors')}
+                aria-label={t('choose_color_pattern_4')}
               />
             </label>
           </>
@@ -139,33 +145,35 @@ const Customize = () => {
 
         {product.id === 7 && (
           <label className="input">
-            Choose two colors (one for each bag):
+            {t('choose_two_colors')}
             <input
               type="text"
               name="color"
               value={formData.color}
               onChange={handleChange}
-              placeholder="Exp: Brown, Green"
+              placeholder={t('placeholder_brown_green')}
+              aria-label={t('choose_two_colors')}
             />
           </label>
         )}
 
         {(product.id === 8 || product.id === 9) && (
           <label className="input">
-            Choose color:
+            {t('choose_color')}
             <input
               type="text"
               name="color"
               value={formData.color}
               onChange={handleChange}
-              placeholder="Exp: Green"
+              placeholder={t('placeholder_green')}
+              aria-label={t('choose_color')}
             />
           </label>
         )}
 
         {(product.id === 10 || product.id === 11 || product.id === 12) && (
-          <div className="fieldset">
-            <label>Choose Dimension:</label>
+          <fieldset className="fieldset">
+            <legend>{t('choose_dimension')}</legend>
             <div className="radio-group">
               {product.dimension.map((dimension, index) => (
                 <label key={index}>
@@ -174,15 +182,16 @@ const Customize = () => {
                     name="dimension"
                     value={dimension}
                     onChange={handleChange}
+                    aria-label={t(`dimension_${dimension.toLowerCase().replace(/ /g, '_').replace(/:/g, '').replace(/cm/g, 'cm').replace(/m/g, 'm')}`)}
                   />
-                  {dimension}
+                  {t(`dimension_${dimension.toLowerCase().replace(/ /g, '_').replace(/:/g, '').replace(/cm/g, 'cm').replace(/m/g, 'm')}`)}
                 </label>
               ))}
             </div>
-          </div>
+          </fieldset>
         )}
 
-        <button type="submit">Submit</button>
+        <button type="submit">{t('submit')}</button>
       </form>
     </div>
   );

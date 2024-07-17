@@ -23,7 +23,7 @@
   
   .filter-group input,
   .filter-subgroup input {
-    margin-right: 10px;
+    margin-right: 10px; 
   }
   
   .shopcategory-indexSort {
@@ -41,9 +41,9 @@
   }
   
   .shopcategory-indexSort p {
-    font-weight: 200;
+    font-weight: 400;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
   }
   
   .shopcategory-products {
