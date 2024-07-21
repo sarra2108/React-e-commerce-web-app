@@ -19,7 +19,7 @@ const Product = () => {
     <div>
       
       <Breadcrum product={product}/>
-      <ProductDisplay product={product} path='/contact_us' component={ContactArtisan} />
+      <ProductDisplay product={product}  all_product={all_product} path='/contact_us' component={ContactArtisan} />
       <Customize product={product}/>
       <DescriptionBox product={product}/>
      

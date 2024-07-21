@@ -14,7 +14,7 @@ const ShopCategory = (props) => {
     Handbag: false,
     'Handwoven_Bags': false,
     'Straw_baskets': false,
-  });
+  }); 
 
   const handleCheckboxChange = (category) => {
     let newSelectedCategories = { ...selectedCategories };

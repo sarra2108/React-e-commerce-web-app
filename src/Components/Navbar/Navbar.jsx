@@ -23,7 +23,7 @@ const Navbar = () => {
     i18n.changeLanguage(lng);
   };
 
-  return (
+  return ( 
     <div className='navbar'>
       <div className="nav-logo">
         <Link to='/' onClick={() => { setMenu("shop") }} >
@@ -32,14 +32,14 @@ const Navbar = () => {
       </div> 
       <img onClick={dropdown_toggle} className='nav-dropdown' src={nav_dropdown} alt="" />
       <ul ref={menuRef} className="nav-menu">
-        <li onClick={() => { setMenu("shop") }}><Link to='/'>{t('home')}</Link>{menu === "shop" ? <hr /> : null}</li>
+        <li onClick={() => { setMenu("shop") }}><Link to='/blessingsofcarthage'>{t('home')}</Link>{menu === "shop" ? <hr /> : null}</li>
         <li onClick={() => { setMenu("products") }}><Link to='/products'>{t('products')}</Link>{menu === "products" ? <hr /> : null}</li>
         <li onClick={() => { setMenu("contact_us") }}><Link to='/contact_us'>{t('contact_us')}</Link>{menu === "contact_us" ? <hr /> : null}</li>
         <li onClick={() => { setMenu("FAQ") }}><Link to='/FAQ'>FAQ</Link>{menu === "FAQ" ? <hr /> : null}</li>
       </ul>
       <div className="nav-login-cart">
         <Link to='/login'><button>{t('login')}</button></Link>
-        <Link to='/login'><button>Sign up</button></Link>
+        <Link to='/signup'><button>{t('signup')}</button></Link>
         <div className="language-switcher">
           <FontAwesomeIcon icon={faEarthAmericas} className="large-icon" />
           <div className="language-dropdown">

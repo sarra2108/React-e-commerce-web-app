@@ -4,10 +4,12 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   en: {
     translation: {
+      "OR":"OR",
         "home": "Home",
         "products": "Products",
-        "contact_us": "Contact Us",
-        "login": "Login",
+        "contact_us": "Contact us",
+        "login": "Log in",
+        "signup" : "Sign up",
         "reviews": "Reviews",
       "reviews_on": "Reviews on",
       "review_1": "Review 1",
@@ -18,7 +20,7 @@ const resources = {
       "review_3_text": "An authentic piece that seamlessly blends traditional and modern aesthetics.",
       "rating": "Rating",
       "overall_rating": "Overall rating",
-      "most_frequently_used_words": "Most frequently used words",
+      "most_frequently_used_words": "Most frequently used words in reviews",
       "description": "Description",
       "artisan": "Artisan",
       "processes_behind_the_product": "Processes Behind the Product",
@@ -62,8 +64,8 @@ const resources = {
       "choose_color_vase": "Choose color of the vase:",
       "choose_color_pattern": "Choose color of pattern:",
       "add_personalized_message": "Add a personalized message:",
-      "choose_shape": "Choose Shape:",
-      "choose_dimension": "Choose Dimension:",
+      "choose_shape": "Choose shape:",
+      "choose_dimension": "Choose dimension:",
       "choose_color_bowl": "Choose color of the bowl:",
       "choose_color_pattern_4": "Choose color of pattern (up to 4 colors, separated by commas):",
       "choose_two_colors": "Choose two colors (one for each bag):",
@@ -88,16 +90,18 @@ const resources = {
       "dimension_big__25cm": "Big : 25cm",
       "dimension_small__1m": "Small : 1m",
       "dimension_meduim__1_5m": "Medium : 1.5m",
-      "dimension_big__2m": "Big : 2m"
-
+      "dimension_big__2m": "Big : 2m",
+      "those_who_liked_this_product_also_liked" :"Those who liked this product, also liked" 
     }
   },
   fr: {
     translation: {
+      "OR":"OU",
         "home": "Accueil",
         "products": "Produits",
         "contact_us": "Contactez-nous",
         "login": "S'inscrire",
+        "signup" : "Se connecter",
         "reviews": "Avis",
       "reviews_on": "Avis sur",
       "review_1": "Avis 1",
@@ -108,7 +112,7 @@ const resources = {
       "review_3_text": "Une pièce authentique qui mélange harmonieusement esthétique traditionnelle et moderne.",
       "rating": "Note",
       "overall_rating": "Note globale",
-      "most_frequently_used_words": "Mots les plus fréquemment utilisés",
+      "most_frequently_used_words": "Mots les plus fréquemment utilisés dans les avis",
       "description": "Description",
       "artisan": "Artisan",
       "processes_behind_the_product": "Processus Derrière le Produit",
@@ -178,7 +182,8 @@ const resources = {
       "dimension_big__25cm": "Grand : 25cm",
       "dimension_small__1m": "Petit : 1m",
       "dimension_meduim__1_5m": "Moyen : 1.5m",
-      "dimension_big__2m": "Grand : 2m"
+      "dimension_big__2m": "Grand : 2m",
+      "those_who_liked_this_product_also_liked" :"Ceux qui ont aimé ce produit, ont aussi aimé" 
     }
   }
 };
