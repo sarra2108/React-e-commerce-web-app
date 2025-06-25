@@ -23,7 +23,7 @@ const Navbar = () => {
     i18n.changeLanguage(lng);
   };
 
-  return (
+  return ( 
     <div className='navbar'>
       <div className="nav-logo">
         <Link to='/' onClick={() => { setMenu("shop") }} >
@@ -39,7 +39,7 @@ const Navbar = () => {
       </ul>
       <div className="nav-login-cart">
         <Link to='/login'><button>{t('login')}</button></Link>
-        <Link to='/login'><button>Sign up</button></Link>
+        <Link to='/signup'><button>{t('signup')}</button></Link>
         <div className="language-switcher">
           <FontAwesomeIcon icon={faEarthAmericas} className="large-icon" />
           <div className="language-dropdown">

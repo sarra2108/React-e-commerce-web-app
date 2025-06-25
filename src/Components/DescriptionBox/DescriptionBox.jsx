@@ -12,7 +12,7 @@ const DescriptionBox = (props) => {
     <div className='descriptionbox' role="region" aria-labelledby="reviews-heading">
       <div className="descriptionbox-navigator">
         <div className="descriptionbox-nav-box">{t('reviews')}</div>
-      </div>
+      </div> 
       
       <div className="descriptionbox-description">
         <h3 id="reviews-heading">{t('reviews_on')} {t(`product_${product.id}_description`)}</h3>

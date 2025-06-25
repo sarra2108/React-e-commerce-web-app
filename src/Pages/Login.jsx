@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './CSS/LoginSignup.css';
+import { Link } from 'react-router-dom';
 
 const LoginSignup = () => {
   const [formData, setFormData] = useState({
@@ -56,7 +57,7 @@ const LoginSignup = () => {
   return (
     <div className='loginsignup'>
       <div className="loginsignup-container">
-        <h1>Log In</h1>
+        <h1>Log in</h1>
         <form className="loginsignup-fields" onSubmit={handleSubmit}>
           <input 
             type="text" 
@@ -90,7 +91,7 @@ const LoginSignup = () => {
           
           <button type="submit">Continue</button>
         </form>
-        <p className="loginsignup-login">Don't have an account? <span>Sign up here</span></p>
+        <p className="loginsignup-login">Don't have an account? <Link to='/signup'><span>Sign up here</span></Link></p>
       </div>
     </div>
   )

@@ -6,8 +6,8 @@ const FAQ = () => {
     <div className="faq">
       <h2>Frequently Asked Questions</h2>
       <div className="faq-item">
-        <h3>How can we cancel the product?</h3>
-        <p>You can cancel the product within 24 hours of placing the order. Please contact our support team with your order ID to initiate the cancellation process.</p>
+        <h3>How can we cancel the order?</h3>
+        <p>You can cancel the order within 24 hours of placing it. Please contact our support team with your order ID to initiate the cancellation process.</p>
       </div>
       <div className="faq-item">
         <h3>How much time does it take for delivery?</h3>

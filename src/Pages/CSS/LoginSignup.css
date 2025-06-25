@@ -76,6 +76,11 @@ body {
     font-weight: 500;
 }
 
+
+a{
+    color: red;
+}
+
 @media(max-width: 600px) {
     .loginsignup-container h1 {
         font-size: 22px;

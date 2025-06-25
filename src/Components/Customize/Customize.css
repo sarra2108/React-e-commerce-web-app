@@ -82,10 +82,11 @@
 
 button[type="submit"] {
     padding: 10px 20px;
-    background-color: #040303; /* Updated color */
+    background-color: #ff4141; /* Updated color */
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     align-self: center;
+    width: 100%;
 }

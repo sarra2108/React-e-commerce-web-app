@@ -38,7 +38,7 @@ const Customize = () => {
     <div className="customize-container" role="form" aria-labelledby="customize-title">
       <div className="product-display">
         <h1 id="customize-title">{t('customize_title')}</h1>
-        <hr className="short-hr" />
+        
       </div>
       <form className="customize-form" onSubmit={handleSubmit}>
         {(product.id === 1 || product.id === 2 || product.id === 3) && (
@@ -76,8 +76,8 @@ const Customize = () => {
                 aria-label={t('add_personalized_message')}
               />
             </label>
-            <fieldset className="fieldset">
-              <legend>{t('choose_shape')}</legend>
+            <div className="fieldset">
+              <label>{t('choose_shape')}</label>
               <div className="radio-group">
                 {product.shapes.map((shape, index) => (
                   <label key={index}>
@@ -92,13 +92,13 @@ const Customize = () => {
                   </label>
                 ))}
               </div>
-            </fieldset>
+            </div>
           </>
         )}
 
         {(product.id === 4 || product.id === 5) && (
-          <fieldset className="fieldset">
-            <legend>{t('choose_dimension')}</legend>
+          <div className="fieldset">
+            <label>{t('choose_dimension')}</label>
             <div className="radio-group">
               {product.dimension.map((dimension, index) => (
                 <label key={index}>
@@ -113,7 +113,7 @@ const Customize = () => {
                 </label>
               ))}
             </div>
-          </fieldset>
+          </div>
         )}
 
         {product.id === 6 && (
@@ -172,8 +172,8 @@ const Customize = () => {
         )}
 
         {(product.id === 10 || product.id === 11 || product.id === 12) && (
-          <fieldset className="fieldset">
-            <legend>{t('choose_dimension')}</legend>
+          <div className="fieldset">
+            <label>{t('choose_dimension')}</label>
             <div className="radio-group">
               {product.dimension.map((dimension, index) => (
                 <label key={index}>
@@ -188,7 +188,7 @@ const Customize = () => {
                 </label>
               ))}
             </div>
-          </fieldset>
+          </div>
         )}
 
         <button type="submit">{t('submit')}</button>
