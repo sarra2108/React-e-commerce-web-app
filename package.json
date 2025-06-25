@@ -1,5 +1,5 @@
 {
-  "homepage": "http://sarra2108.github.io/React-e-commerce-web-app",
+  "homepage": "http://sarra2108.github.io/blessingofcarthage",
   "name": "blessingsofcarthage",
   "version": "0.1.0",
   "private": true,
@@ -48,6 +48,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.1.1"
   }
 }

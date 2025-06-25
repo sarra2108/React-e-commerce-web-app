@@ -32,7 +32,7 @@ const Navbar = () => {
       </div> 
       <img onClick={dropdown_toggle} className='nav-dropdown' src={nav_dropdown} alt="" />
       <ul ref={menuRef} className="nav-menu">
-        <li onClick={() => { setMenu("shop") }}><Link to='/'>{t('home')}</Link>{menu === "shop" ? <hr /> : null}</li>
+        <li onClick={() => { setMenu("shop") }}><Link to='/blessingsofcarthage'>{t('home')}</Link>{menu === "shop" ? <hr /> : null}</li>
         <li onClick={() => { setMenu("products") }}><Link to='/products'>{t('products')}</Link>{menu === "products" ? <hr /> : null}</li>
         <li onClick={() => { setMenu("contact_us") }}><Link to='/contact_us'>{t('contact_us')}</Link>{menu === "contact_us" ? <hr /> : null}</li>
         <li onClick={() => { setMenu("FAQ") }}><Link to='/FAQ'>FAQ</Link>{menu === "FAQ" ? <hr /> : null}</li>
